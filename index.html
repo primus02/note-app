@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+    <head>
+          <meta charset="utf-8"/>
+          <title>Note App</title>
+          <link rel="styleSheet" type="text/css" href="style.css"/>
+          <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css" integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc" crossorigin="anonymous">
+          <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <div class="main-container">
+            <p class="logo"><img src="logo.png" alt="logo"/></p>
+            <div class="container">
+                <div id="notes">
+                    <h2 class="events">Upcoming Events</h2>
+                    <h4 class="date">This month, March 2022</h4>
+                    <div class="note-container">
+                        <div class="note">
+                            <div class="content">
+                                <h4>Date/Time created- <span class="created-date">Date</span></h4>
+                                <h2>Doctor's Appointment</h2>
+                                <p class="note-description" >
+                                    Doctor's appointment with Ryan price. Ryan Price is going to do a checkup for me. This
+                                    checkup requires me to go to the emergency unit of the hospital. After the appointment, I have
+                                    to do a CT scan and then an X-ray.
+                                </p>
+                                <div class="icons-container">
+                                    <p class="avatar">Avarta</p>
+                                    <p class="icons">
+                                        <span class="edit"><i class="fas fa-edit"></i></span>
+                                        <span class="delete"><i class="fas fa-trash"></i></span>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="note">
+                            <div class="content">
+                                <h4>Date/Time created- <span class="created-date">Date</span></h4>
+                                <h2>Birthday Party</h2>
+                                <p class="note-description">
+                                    I have to attend a birthday party held by my best friend. He is turning 37 years old.
+                                </p>
+                                <div class="icons-container">
+                                    <p class="avatar">Avarta</p>
+                                    <p class="icons">
+                                        <span class="edit"><i class="fas fa-edit"></i></span>
+                                        <span class="delete"><i class="fas fa-trash"></i></span>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="note">
+                            <div class="content">
+                                <h4>Date/Time created- <span class="created-date">Date</span></h4>
+                                <h2>Office Meeting</h2>
+                                <p class="note-description">
+                                    I want to release a product in the market but it requires design tweaks and software changes
+                                    before it can be finalized and released. Therefore, I will hold a meeting with all the software
+                                    developers and product designers in the company to address these issues.
+                                </p>
+                                <div class="icons-container">
+                                    <p class="avatar">Avarta</p>
+                                    <p class="icons">
+                                        <span class="edit"><i class="fas fa-edit"></i></span>
+                                        <span class="delete"><i class="fas fa-trash"></i></span>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="note">
+                            <div class="content">
+                                <h4>Date/Time created- <span class="created-date">Date</span></h4>
+                                <h2>Hockey Game</h2>
+                                <p class="note-description">
+                                    I have tickets to a hockey game in Seattle. I will watch the game with my girlfriend. It’s our
+                                    anniversary.
+                                </p>
+                                <div class="icons-container">
+                                    <p class="avatar">Avarta</p>
+                                    <p class="icons">
+                                        <span class="edit"><i class="fas fa-edit"></i></span>
+                                        <span class="delete"><i class="fas fa-trash"></i></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="text-field">
+                    <h1>Note</h1>
+                    <div>
+                        <p class="add-note">Add note <span><i class="fas fa-plus-circle"></i></span></p>
+                        <div class="form d-none">
+                            <p><input id="title-field" type="text" placeholder="Enter the title"/></p>
+                            <p><textarea id="desc-field" type="text" placeholder="Enter the description"></textarea></p>
+                            <span class="save"><i class="far fa-save"></i></span>
+                        </div>
+                    </div>
+                </div>
+                <div id="note-details">
+                    <h2>Event Details</h2>
+                    <div class="detail-group">
+                        <div class="detail">
+                            <p><i class="fas fa-pen-nib"></i></p>
+                            <div>
+                                <h3>Title</h3>
+                                <h5 class="event-title">Appointment</h5>
+                            </div>
+                        </div>
+                        <div class="detail">
+                            <p><i class="fas fa-calendar-alt"></i></p>
+                            <div>
+                                <h3>Date</h3>
+                                <h5 class="event-date">March 22, 2022</h5>
+                            </div>
+                        </div>
+                        <div class="detail">
+                            <p><i class="far fa-clock"></i></p>
+                            <div>
+                                <h3>Time</h3>
+                                <h5 class="event-time">10:00am - 11:30am</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="detail">
+                        <p><i class="fas fa-map-marker-alt"></i></p>
+                        <div>
+                            <h3>Location</h3>
+                            <h5 class="event-location">Seattle, Washington</h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <script src="script.js"></script>
+    </body>
+</html>
